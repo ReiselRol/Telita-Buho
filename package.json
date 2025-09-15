@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "workspaces": [
+        "telita-buho-backend",
+        "telita-buho-frontend"
+    ],
+    "scripts": {
+        "start": "concurrently -n API,FRONT \"yarn workspace telita-buho-backend start\" \"yarn workspace telita-buho-frontend start\"",
+        "test": "yarn workspace telita-buho-frontend test"
+    },
+    "devDependencies": {
+        "component-crafter": "^2.0.17",
+        "concurrently": "^9.2.0",
+        "madge": "^8.0.0"
+    }
+}
