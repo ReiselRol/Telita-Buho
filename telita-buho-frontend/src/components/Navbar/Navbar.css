@@ -1,0 +1,24 @@
+.Navbar-styles {
+    position: fixed;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: green;
+    width: 100%;
+    transition: all 0.13s ease-out;
+    top: 0;
+    z-index: 1000;
+    height: var(--Header-Height-Desktop);
+
+    @media (max-width: 768px) {
+        top: calc(100vh - var(--Header-Height-Mobile));
+        height: var(--Header-Height-Mobile);
+    }
+}
+
+.Navbar-table {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}

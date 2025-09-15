@@ -1,0 +1,16 @@
+.AppNavigator-Content-styles{
+    position: fixed;
+    height: calc(100vh - var(--Header-Height-Desktop));
+    left: 0;
+    margin: 0;
+    top: var(--Header-Height-Desktop);
+    background-color: tomato;
+    width: 100%;
+    transition: all 0.13s ease-out;
+    
+    @media (max-width: 768px) {
+        height: calc(100vh - var(--Header-Height-Mobile));
+        top: 0;
+    }
+}
+
