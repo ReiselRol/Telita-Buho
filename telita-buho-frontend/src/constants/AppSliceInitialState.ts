@@ -10,4 +10,4 @@ export const AppSliceInitialState: AppSliceType = {
     UserPreferences: {
         Language: 'es',
     },
-};
+} as const;
