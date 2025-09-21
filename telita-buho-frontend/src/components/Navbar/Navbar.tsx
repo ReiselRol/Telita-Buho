@@ -1,5 +1,6 @@
 import { type FC } from 'react';
 import './Navbar.css';
+import { LanguageSelector } from '../LanguageSelector/LanguageSelector';
 
 /**
  * **PROPERTIES OF APP COMPONENT:**
@@ -42,15 +43,18 @@ export const Navbar: FC<NavbarProps> = ({ }) => {
   return (
     <div data-testid='Navbar-Component' className='Navbar-styles'>
       <table className='Navbar-table'>
-        <tr>
-          <td>Logo</td>
-          <td>Inicio</td>
-          <td>Tienda</td>
-          <td>Crear mi producto</td>
-          <td>Sobre nosotros</td>
-          <td>Usuario</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>Logo</td>
+            <td>Inicio</td>
+            <td>Tienda</td>
+            <td>Crear mi producto</td>
+            <td>Sobre nosotros</td>
+            <td><LanguageSelector/></td>
+            <td>Usuario</td>
+          </tr>
+        </tbody>
       </table>
-    </div>
+    </div >
   )
 }

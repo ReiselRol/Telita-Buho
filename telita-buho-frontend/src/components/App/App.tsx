@@ -2,8 +2,14 @@ import { Provider } from 'react-redux';
 import { AppStore } from '../../redux/AppStore';
 import { type FC } from 'react';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
-import { AppNavigator } from '../AppNavigator/AppNavigator';
+import { BrowserRouter, Routes, Navigate, Route } from 'react-router-dom';
+import { AppRoutes } from '../../constants/AppRoutes';
+import { ShopPage } from '../ShopPage/ShopPage';
+import { HomePage } from '../HomePage/HomePage';
+import { AboutUsPage } from '../AboutUsPage/AboutUsPage';
+import { RegisterPage } from '../RegisterPage/RegisterPage';
+import { LoginPage } from '../LoginPage/LoginPage';
+import { UserPage } from '../UserPage/UserPage';
 
 /**
  * **PROPERTIES OF APP COMPONENT:**
@@ -37,7 +43,15 @@ export const App: FC<AppProps> = ({ }) => {
     <Provider store={AppStore}>
       <BrowserRouter>
         <div data-testid='App-Component' className='App-styles'>
-          <AppNavigator/>
+          <Routes>
+            <Route path={AppRoutes.HomePage} element={<HomePage />} />
+            <Route path={AppRoutes.ShopPage} element={<ShopPage />} />
+            <Route path={AppRoutes.AboutUsPage} element={<AboutUsPage />} />
+            <Route path={AppRoutes.RegisterPage} element={<RegisterPage />} />
+            <Route path={AppRoutes.LoginPage} element={<LoginPage />} />
+            <Route path={AppRoutes.UserPage + ':id'} element={<UserPage />} />
+            <Route path="*" element={<Navigate to={AppRoutes.HomePage} replace />} />
+          </Routes>
         </div>
       </BrowserRouter>
     </Provider>

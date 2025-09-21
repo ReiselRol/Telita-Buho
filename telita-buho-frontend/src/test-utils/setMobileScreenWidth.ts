@@ -1,4 +1,4 @@
-import { DefaultMobileSxreenWidth } from "../constants/DefaultMobileSxreenWidth"
+import { DefaultMobileScreenWidth } from "../constants/DefaultMobileScreenWidth"
 import { setScreenWidth } from "./setScreenWidth"
 
 /**
@@ -13,5 +13,5 @@ import { setScreenWidth } from "./setScreenWidth"
  * setMobileScreenWidth();
  */
 export const setMobileScreenWidth = () => {
-    setScreenWidth(DefaultMobileSxreenWidth);
+    setScreenWidth(DefaultMobileScreenWidth);
 }

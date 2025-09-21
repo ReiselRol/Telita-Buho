@@ -61,4 +61,24 @@ describe('Test for useTranslations custom hook', () => {
 
     expect(translationResult).toBe(translations['example'].en);
   });
+
+  test('5.- the custom hook return the correct translation of the passed object.',  () => {
+    const translationObject = translations.example;
+
+    let translationResult: string = '';
+
+    act(() => {
+      store.dispatch(setLanguage('en'));
+    });
+
+    result = renderHook(() => useTranslations({}), {
+      wrapper,
+    }).result;
+
+    act(() => {
+      translationResult = result.current.t(translationObject);
+    });
+
+    expect(translationResult).toBe(translationObject.en);
+  })
 });
