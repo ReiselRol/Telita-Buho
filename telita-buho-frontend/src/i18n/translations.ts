@@ -199,6 +199,22 @@ export const translations: TranslationsType = {
     ko: '번체 중국어',
     zhHant: '繁體中文',
   },
+  /**
+   * With this tag you can render the flag emoty"
+   */
+  flags: {
+    es: '🇪🇸',
+    en: '🇺🇸',
+    fr: '🇫🇷',
+    de: '🇩🇪',
+    it: '🇮🇹',
+    ja: '🇯🇵',
+    zhHans: '🇨🇳',
+    pt: '🇵🇹',
+    ru: '🇷🇺',
+    ko: '🇰🇷',
+    zhHant: '🇹🇼',
+  },
   errorLocalizedIdNotFound: {
     es: 'Elemento no encontrado.',
     en: 'Item not found.',

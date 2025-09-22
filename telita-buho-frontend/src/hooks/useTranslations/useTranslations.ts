@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
-import { translations } from '../../i18n/translations';
 import type { I18nType } from '../../types/I18nType';
 import type { UseSelectorType } from '../../types/UseSelectorType';
+import { translate } from '../../methods/translate/translate';
 
 /**
  * **DESCRIPTION:**
@@ -68,16 +68,10 @@ interface UseTranslationsProps {
  */
 export const useTranslations = ({} : UseTranslationsProps): UseTranslationsReturn => {
 
-  const languageSelected = useSelector((state: UseSelectorType) => state.AppSlice.UserPreferences.Language);
+  const languageId = useSelector((state: UseSelectorType) => state.AppSlice.UserPreferences.Language);
 
   const t = (stringIdentifier: I18nType | string): string => {
-    if (typeof stringIdentifier === 'string') {
-      if (translations[stringIdentifier] != undefined) {
-        return translations[stringIdentifier][languageSelected];
-      } else return translations.errorLocalizedIdNotFound[languageSelected];
-    } else {
-      return stringIdentifier[languageSelected];
-    }
+    return translate({ stringIdentifier, languageId});
   }
 
   return {
