@@ -1,6 +1,7 @@
 import { type FC } from 'react';
 import './Navbar.css';
 import { LanguageSelector } from '../LanguageSelector/LanguageSelector';
+import { UserButton } from '../UserButton/UserButton';
 
 /**
  * **PROPERTIES OF APP COMPONENT:**
@@ -51,7 +52,7 @@ export const Navbar: FC<NavbarProps> = ({ }) => {
             <td>Crear mi producto</td>
             <td>Sobre nosotros</td>
             <td><LanguageSelector/></td>
-            <td>Usuario</td>
+            <td><UserButton/></td>
           </tr>
         </tbody>
       </table>

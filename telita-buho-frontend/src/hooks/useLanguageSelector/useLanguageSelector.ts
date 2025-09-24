@@ -11,9 +11,9 @@ import type { UseSelectorType } from "../../types/UseSelectorType";
  * 
  * With this interface we can represent the return of the
  * custom hook of the useLanguageSelector, that this custom
- * hook will return only two properties, one calle 't' that
+ * hook will return only two properties, one calle `t` that
  * is a function that you can use for get the translation. The
- * other prop that you can get with this is the 'changeLanguage'
+ * other prop that you can get with this is the `changeLanguage`
  * that is a function for change the language of all the fontend app.
  */
 interface UseLanguageSelectorReturn {
