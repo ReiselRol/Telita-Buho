@@ -6,7 +6,8 @@
     ],
     "scripts": {
         "start": "concurrently -n API,FRONT \"yarn workspace telita-buho-backend start\" \"yarn workspace telita-buho-frontend start\"",
-        "test": "yarn workspace telita-buho-frontend test"
+        "test": "yarn workspace telita-buho-frontend test",
+        "test:coverage": "yarn test --coverage"
     },
     "devDependencies": {
         "component-crafter": "^2.0.17",

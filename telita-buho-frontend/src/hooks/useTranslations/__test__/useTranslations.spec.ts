@@ -80,5 +80,5 @@ describe('Test for useTranslations custom hook', () => {
     });
 
     expect(translationResult).toBe(translationObject.en);
-  })
+  });
 });

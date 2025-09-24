@@ -9,7 +9,7 @@ import { translate } from '../../methods/translate/translate';
  * With this interface we can represent the return of the
  * custom hook of the useTranslation, that this custom
  * hook will return only one property that is the function
- * called t that this function is used for get the translations
+ * called `t` that this function is used for get the translations
  * by a translation tag.
  */
 interface UseTranslationsReturn {
@@ -58,7 +58,7 @@ interface UseTranslationsProps {
  * 
  * **RETURNS:**
  * 
- * @returns return an object that contains the porperty called t that is the funcion.
+ * @returns return an object that contains the porperty called `t` that is the funcion.
  * 
  * **EXAMPLE OF USE:**
  * 

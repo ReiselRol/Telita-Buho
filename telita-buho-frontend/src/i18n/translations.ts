@@ -203,17 +203,17 @@ export const translations: TranslationsType = {
    * With this tag you can render the flag emoty"
    */
   flags: {
-    es: '🇪🇸',
-    en: '🇺🇸',
-    fr: '🇫🇷',
-    de: '🇩🇪',
-    it: '🇮🇹',
-    ja: '🇯🇵',
-    zhHans: '🇨🇳',
-    pt: '🇵🇹',
-    ru: '🇷🇺',
-    ko: '🇰🇷',
-    zhHant: '🇹🇼',
+    es: "\uD83C\uDDEA\uD83C\uDDF8",
+    en: "\uD83C\uDDFA\uD83C\uDDF8",
+    fr: "\uD83C\uDDEB\uD83C\uDDF7",
+    de: "\uD83C\uDDE9\uD83C\uDDEA",
+    it: "\uD83C\uDDEE\uD83C\uDDF9",
+    ja: "\uD83C\uDDEF\uD83C\uDDF5",
+    zhHans: "\uD83C\uDDE8\uD83C\uDDF3",
+    zhHant: "\uD83C\uDDF9\uD83C\uDDFC",
+    pt: "\uD83C\uDDF5\uD83C\uDDF9",
+    ru: "\uD83C\uDDF7\uD83C\uDDFA",
+    ko: "\uD83C\uDDF0\uD83C\uDDF7"
   },
   errorLocalizedIdNotFound: {
     es: 'Elemento no encontrado.',
